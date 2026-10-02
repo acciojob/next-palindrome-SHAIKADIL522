@@ -1,6 +1,5 @@
 function nextPalindrome(num) {
-  //your JS code here
-	  num = Number(num);
+  num = Number(num);
   let n = num + 1;
   while (true) {
     const s = String(n);
