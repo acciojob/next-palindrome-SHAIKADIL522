@@ -1,11 +1,10 @@
 function nextPalindrome(num) {
-  num = Number(num);
-  let n = num + 1;
+  let n = parseInt(String(num).trim(), 10);
+  if (isNaN(n) || n < 1) return "";
+  n++;
   while (true) {
     const s = String(n);
-    if (s === s.split("").reverse().join("")) {
-      return n;
-    }
+    if (s === s.split("").reverse().join("")) return n;
     n++;
   }
 }
